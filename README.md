@@ -33,18 +33,20 @@ or
  * Excepteur sint occaecat cupidatat non proident,
  * sunt in culpa qui officia deserunt mollit anim id est laborum."
  *
+ * Text will be repeated as many times as needed to fit required length of 1500 symbols.
+ *
  * Last three symbols will be replaced with dots.
  */
-
-let exampleText = Verbose.generateText(replaceLastThreeSymbolsWithDots: true)
-
-
+        
+let loremIpsum = Verbose.textOfType(.LoremIpsum, withLength: 1500, replaceLastThreeSymbolsWithDots: true)
+        
+        
 /*
- * Another example text will contain Lorem Ipsum expression,
- * repeated several times until length of text is equal to 1500.
+ * Another example text will contain English alphabet,
+ * repeated several times until length of text is equal to 2000.
  */
-
-let anotherExampleText = Verbose.generateTextOfLength(1500, replaceLastThreeSymbolsWithDots: true)
+        
+let alphabet = Verbose.textOfType(.Alphabet, withLength: 1500, replaceLastThreeSymbolsWithDots: true)
 
 ```
 
