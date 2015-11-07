@@ -46,7 +46,7 @@ let loremIpsum = Verbose.textOfType(.LoremIpsum, withLength: 1500, replaceLastTh
  * repeated several times until length of text is equal to 2000.
  */
         
-let alphabet = Verbose.textOfType(.Alphabet, withLength: 1500, replaceLastThreeSymbolsWithDots: true)
+let alphabet = Verbose.textOfType(.Alphabet, withLength: 2000, replaceLastThreeSymbolsWithDots: true)
 
 ```
 
