@@ -15,6 +15,8 @@
 		6994C7591BEE3FD60047FE2E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6994C7571BEE3FD60047FE2E /* MainViewController.swift */; };
 		6994C75A1BEE3FD60047FE2E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6994C7581BEE3FD60047FE2E /* MainViewController.xib */; };
 		6994C75E1BEE404A0047FE2E /* Verbose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6994C75D1BEE404A0047FE2E /* Verbose.swift */; };
+		6994C7601BEE50860047FE2E /* VerboseTextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6994C75F1BEE50860047FE2E /* VerboseTextType.swift */; };
+		6994C7621BEE50D10047FE2E /* StringExtensionVerbose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6994C7611BEE50D10047FE2E /* StringExtensionVerbose.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		6994C7571BEE3FD60047FE2E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6994C7581BEE3FD60047FE2E /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		6994C75D1BEE404A0047FE2E /* Verbose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verbose.swift; sourceTree = "<group>"; };
+		6994C75F1BEE50860047FE2E /* VerboseTextType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerboseTextType.swift; sourceTree = "<group>"; };
+		6994C7611BEE50D10047FE2E /* StringExtensionVerbose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionVerbose.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				6994C75D1BEE404A0047FE2E /* Verbose.swift */,
+				6994C75F1BEE50860047FE2E /* VerboseTextType.swift */,
+				6994C7611BEE50D10047FE2E /* StringExtensionVerbose.swift */,
 			);
 			name = Verbose;
 			path = ../../../../Source;
@@ -301,8 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6994C7271BEE3ED60047FE2E /* AppDelegate.swift in Sources */,
+				6994C7601BEE50860047FE2E /* VerboseTextType.swift in Sources */,
 				6994C75E1BEE404A0047FE2E /* Verbose.swift in Sources */,
 				6994C7591BEE3FD60047FE2E /* MainViewController.swift in Sources */,
+				6994C7621BEE50D10047FE2E /* StringExtensionVerbose.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
