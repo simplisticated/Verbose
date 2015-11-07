@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Verbose"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "Text generator written in Swift."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-Text generator in Swift.
+Easy-to-use text generator written in Swift.
                    DESC
 
   s.homepage     = "https://github.com/igormatyushkin014/Verbose"
