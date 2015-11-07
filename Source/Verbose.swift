@@ -1,6 +1,6 @@
 //
 //  Verbose.swift
-//  VerboseDemo
+//  Verbose
 //
 //  Created by Igor Matyushkin on 07.11.15.
 //  Copyright © 2015 Igor Matyushkin. All rights reserved.
