@@ -21,7 +21,17 @@ public class Verbose: NSObject {
     
     // MARK: Class methods
     
-    public class func generateTextOfLength(length: Int, replaceLastThreeLettersWithDots: Bool) -> String {
+    /**
+    Generates text with required length.
+    
+    - Parameters:
+        - length: Required length of generated text.
+    
+        - replaceLastThreeSymbolsWithDots: Defines whether last three symbols in generated text should be replaced with dots.
+    
+    - returns: Text with required length.
+    */
+    public class func generateTextOfLength(length: Int, replaceLastThreeSymbolsWithDots: Bool) -> String {
         // Create result text variable
         
         var resultText = ""
@@ -50,7 +60,7 @@ public class Verbose: NSObject {
         
         // Replace last three symbols with dots if needed
         
-        if replaceLastThreeLettersWithDots {
+        if replaceLastThreeSymbolsWithDots {
             // Obtain string with maximum possible number of dots between zero and three depending on length of result string
             
             var dots = ""
@@ -77,9 +87,17 @@ public class Verbose: NSObject {
         return resultText
     }
     
-    public class func generateText(replaceLastThreeLettersWithDots replaceLastThreeLettersWithDots: Bool) -> String {
+    /**
+    Generates Lorem Ipsum text based on specified parameters.
+     
+    - Parameters:
+        - replaceLastThreeSymbolsWithDots: Defines whether last three symbols in generated text should be replaced with dots.
+     
+    - returns: Lorem Ipsum text with specified parameters.
+    */
+    public class func generateText(replaceLastThreeSymbolsWithDots replaceLastThreeSymbolsWithDots: Bool) -> String {
         let lengthOfText = textUnit.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
-        let resultText = generateTextOfLength(lengthOfText, replaceLastThreeLettersWithDots: replaceLastThreeLettersWithDots)
+        let resultText = generateTextOfLength(lengthOfText, replaceLastThreeSymbolsWithDots: replaceLastThreeSymbolsWithDots)
         return resultText
     }
     
