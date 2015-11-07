@@ -41,7 +41,7 @@ class MainViewController: UIViewController {
         
         // Initialize text view
         
-        let text = Verbose.generateTextOfLength(15000, replaceLastThreeLettersWithDots: true)
+        let text = Verbose.generateTextOfLength(15000, replaceLastThreeSymbolsWithDots: true)
         let attributedText = NSAttributedString(string: text, attributes: attributesForText())
         textView.attributedText = attributedText
     }
