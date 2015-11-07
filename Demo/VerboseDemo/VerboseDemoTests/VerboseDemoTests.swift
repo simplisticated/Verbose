@@ -1,15 +1,15 @@
 //
-//  VerboseTests.swift
-//  VerboseTests
+//  VerboseDemoTests.swift
+//  VerboseDemoTests
 //
 //  Created by Igor Matyushkin on 07.11.15.
 //  Copyright © 2015 Igor Matyushkin. All rights reserved.
 //
 
 import XCTest
-@testable import Verbose
+@testable import VerboseDemo
 
-class VerboseTests: XCTestCase {
+class VerboseDemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
