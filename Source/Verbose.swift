@@ -12,12 +12,6 @@ public class Verbose: NSObject {
     
     // MARK: Class variables & properties
     
-    private class var textUnit: String {
-        get {
-            return "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        }
-    }
-    
     
     // MARK: Class methods
     
@@ -25,13 +19,33 @@ public class Verbose: NSObject {
     Generates text with required length.
     
     - Parameters:
+        - type: Type of text.
+    
         - length: Required length of generated text.
     
         - replaceLastThreeSymbolsWithDots: Defines whether last three symbols in generated text should be replaced with dots.
     
     - returns: Text with required length.
     */
-    public class func generateTextOfLength(length: Int, replaceLastThreeSymbolsWithDots: Bool) -> String {
+    public class func textOfType(type: VerboseTextType, withLength length: Int, replaceLastThreeSymbolsWithDots: Bool) -> String {
+        let unitText = type.text
+        let resultText = generateTextWithUnit(unitText, length: length, replaceLastThreeSymbolsWithDots: replaceLastThreeSymbolsWithDots)
+        return resultText
+    }
+    
+    /**
+    Generates text with required length.
+     
+    - Parameters:
+        - textUnit: Unit of text that will be repeated in result string as many times as needed to fit required text length.
+     
+        - length: Required length of generated text.
+     
+        - replaceLastThreeSymbolsWithDots: Defines whether last three symbols in generated text should be replaced with dots.
+     
+    - returns: Text with required length.
+    */
+    private class func generateTextWithUnit(textUnit: String, length: Int, replaceLastThreeSymbolsWithDots: Bool) -> String {
         // Create result text variable
         
         var resultText = ""
@@ -84,20 +98,6 @@ public class Verbose: NSObject {
         
         // Return result
         
-        return resultText
-    }
-    
-    /**
-    Generates Lorem Ipsum text based on specified parameters.
-     
-    - Parameters:
-        - replaceLastThreeSymbolsWithDots: Defines whether last three symbols in generated text should be replaced with dots.
-     
-    - returns: Lorem Ipsum text with specified parameters.
-    */
-    public class func generateText(replaceLastThreeSymbolsWithDots replaceLastThreeSymbolsWithDots: Bool) -> String {
-        let lengthOfText = textUnit.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
-        let resultText = generateTextOfLength(lengthOfText, replaceLastThreeSymbolsWithDots: replaceLastThreeSymbolsWithDots)
         return resultText
     }
     
